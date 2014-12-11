@@ -1,0 +1,262 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quotes</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="screen">
+        <style type="text/css">
+
+
+            body{
+
+                background-color: #ccccff;
+            }
+
+
+            .main{
+
+
+                background-color: #ccffcc;
+
+                box-shadow:20px 15px 10px gray;
+
+                height: 200px;
+                font-size: 20px;
+                font-family: fantasy;
+                font-weight: bold;
+                text-align: center;
+                margin-top: 50px;
+                text-decoration:underline;
+
+
+            }
+            .side{
+
+                background-color: #6699ff;
+                height: 200px;
+                margin-top: 50px;
+                box-shadow:20px 15px 10px gray;
+                font-size: 20px;
+                font-family: fantasy;
+                font-weight: bold;
+                text-align: center;
+                text-decoration:underline;
+            }
+            .side1{
+                background-color: #cc99ff;
+                height: 200px;
+                margin-top: 50px;
+                box-shadow:20px 15px 10px gray;
+                font-size: 20px;
+                font-family: fantasy;
+                font-weight: bold;
+                text-align: center;
+                text-decoration:underline;
+            }
+            p{
+
+                margin-top: 10px;
+                text-decoration: none;
+
+            }
+            .lower{
+
+                background-color:#ff9933;
+                border: 1px solid #ff9933;   
+                height: 100px;
+                margin-top: 20px;
+                font-size: 25px;
+                font-family: fantasy;
+                font-weight: bold;
+                text-align: center;
+                line-height: 100px;
+            }
+            #own_style{
+                position: relative;
+
+                width: 70px;
+                height: 60px;
+                float: left;
+                margin-left: 10px;             
+
+            }
+
+
+            #own_style1{
+                position: relative;
+
+                width: 70px;
+                height: 60px;
+                float: right;
+                margin-left: 60px;             
+
+            }
+
+            #own_style:hover{
+                opacity: 0;
+            }
+
+            #own_style1:hover{
+                opacity: 0;
+
+            }
+
+
+            #keep_smiling{
+
+                position:relative;
+                width: 70px;
+                height: 60px;
+                float: right;
+                margin-left: 70px;
+                margin-top: 60px;
+
+
+            }
+            #keep_smiling1{
+
+                position:relative;
+                width: 70px;
+                height: 60px;
+                float: left;
+                margin-left: 10px;
+                margin-top: 60px;
+            }
+
+            #happy_face{
+
+                position:relative;
+                width: 70px;
+                height: 100px;
+                float: left;
+                margin-left: 10px;
+
+
+            }
+            #happy_face1{
+
+                position:relative;
+                width: 70px;
+                height: 100px;
+                float: right;
+                margin-left: 60px;
+                margin-right: 10px;
+
+
+            }
+            #happy_time{
+                position:relative;
+                width: 70px;
+                height: 60px;
+                float: left;
+                margin-left: 10px;
+                margin-top: 5px;
+            }
+            #happy_time1{
+                position:relative;
+                width: 70px;
+                height: 60px;
+                float: right;
+                margin-left: 60px;
+                margin-top: 5px;
+            }
+            .trans{
+
+                width:250px;
+                height:180px;
+                background-image: url("ants.jpeg");
+                position: relative;
+                margin-left: 50px;
+                margin-top: 500px;
+                margin-bottom: 40px;
+                transition:width 1s, height 1s, background 1s ease-in-out;
+
+
+            }
+            .trans:hover{
+
+                background-image:url("catterpiller.jpeg");
+                width:250px;
+                height: 180px;
+                transition:width 2s, height 2s, background 2s ease-in-out;
+                transform: rotate(45deg);
+            }
+
+
+            .vava{
+
+
+                border: 1px solid #9999ff;;
+                border-width: 2px;
+                display:block;
+                width:100px;
+                height: 100px;             
+                background-color: #0000FF;
+                -webkit-transition:width 2s, height 2s, background-color 4s, -webkit-transform 4s;  
+                
+                margin-left: 50px;
+                float: left;
+                margin-bottom: 40px;                 
+            }
+            .vava:hover{
+                background-color: #FFCCCC;
+                width:200px;
+                height:200px;
+                -webkit-transform:rotate(180deg);
+                
+                margin-left: 30px;
+                
+                margin-bottom: 40px;
+            }
+            
+            .nice{
+                
+                width: 200px;
+                height: 150px;
+                border: 1px solid black;
+                background-image: url("bee.jpeg");
+                margin-left: 100px;
+                margin-top:  ;
+                float: right;
+                margin-right: 80px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-md-4 main">My Own Style<p>I stay true to myself and 
+                    my style, and I am always pushing myself to be aware of that
+                    and be original.</p><image id="own_style" src="girl.jpeg" alt="girl"/>
+
+
+                <image id="own_style1" src="girl.jpeg" alt="girl"/></div>
+
+            <div class="col-md-4 side">Keep Smiling<p>Keep smiling - it takes 
+                    10 years off!</p>  <image id="keep_smiling" src="smile.jpeg" alt="smile"/>
+
+
+                <image id="keep_smiling1" src="smile.jpeg" alt="smile"/>
+            </div>
+            <div class="col-md-4 side1">Be Happy<p>Be happy with what you have 
+                       and are, be generous with both, and you won't have to hunt 
+                    for happiness.</p> <image id="happy_time" src="happy1.jpeg" alt="happyy"/>
+                <image id="happy_time1" src="happy1.jpeg" alt="happy"/></div>
+
+            <div class="col-md-12 lower">The most important thing is to enjoy 
+                your life - to be happy - it's all that matters.
+                <image id="happy_face" src="happy.jpeg" alt="happy"/>
+                <image id="happy_face1" src="happy.jpeg" alt="happy"/>
+            </div>
+            <div class="trans">
+                keep smiling</div>
+
+            <div class="vava"></div>
+            <div class="nice"></div>
+        </div>
+    </body>
+</html>
