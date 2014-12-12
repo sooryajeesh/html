@@ -9,22 +9,37 @@ and open the template in the editor.
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="screen">
         <style type="text/css">
-            .red {
-                background: red;
+            .logo_container {
+                background-color: #ccffcc;
+                color: #000000;
             }
-            .yellow {
-                background: yellow;
+            .logo_container img {
+                height: 100px;
             }
-            .green {
-                background: green;
+            .menu_container {
+                background-color: #ccccaa;
+                color: #000000;
+            }
+            .menu_container li {
+                list-style-type: none;
+                float: left;
             }
         </style>
     </head>
     <body>
         <div class="row">
-            <div class="col-md-4 red">hi there</div>
-            <div class="col-md-4 yellow">hi there</div>
-            <div class="col-md-4 green">hi there</div>            
+            <div class="col-md-4 logo_container">
+                <img src="bee.jpeg" alt=""/>
+            </div>
+            <div class="col-md-8 menu_container">
+                <ul>
+                    <li>signup</li>
+                    <li>login</li>
+                    <li>communities</li>
+                    <li>how it works</li>
+                    <li>button</li>
+                </ul>
+            </div>
         </div>
     </body>
 </html>
