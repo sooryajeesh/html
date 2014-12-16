@@ -11,64 +11,189 @@ and open the template in the editor.
 
 
             body{
-                background-color: #d5dad5;
+              background-image: url("cube.jpg");
             }
 
             .menu{
 
-                border: 1px solid #919591;
-                background-color: #ccccff;
-                height: 100px;
+                border: 1px solid transparent;
+               
+                height: 150px;
+                font-family:  sans-serif;
+                color: white;
             }
 
             #items{
 
                 float: right;
-
+                margin-left: 50px;
+                
 
             }
             li{
                 display: inline-block;
                 padding: 9px;
-               
+
                 text-align: center;
                 line-height: 53px;
+                color: white;
 
             }
-            ul{
-                margin-right: 10px;
-            }
-            #link_1{
-                
-                border: 1px solid #3399ff;
+            
+            .link1{
+
+
+
+                height: 90px;
                 width: 100px;
-                height: 40px;
-                background-color: #3399ff;
                 
+                color: white;
+
+            }
+            .link1:hover{
+                
+                color: black;
+            }
+            li:hover{
+                color:#00cccc; 
+                    
+            }
+
+            .sun{
+
+                text-align: center;
+                background-color:transparent;
+                height: 150px;
+                border: 1px solid transparent;
+                color: white;
+               
             }
 
 
+            .logo{
+                
+                width: 145px;
+                border: 1px solid #999999;
+                height:70px;
+                text-align: center;
+                font-family: fantasy;
+                background-color: #999999;
+                font-size: 20px;
+                font-weight: bold;
+                color:pink;
+                margin-left: 9px;
+                margin-top: 12px;
+                line-height: 30px;
+                border-radius: 150px;
+
+            }
+            
+
+            
+            .link2{
+                color: white;
+                width:30px;
+                height: 90px;
+                background-color: #ff99cc;
+                    
+                
+                
+            }
+            .link2:hover{
+                color: #cc0000;
+            }
+            
+            div.lower_menu{
+                height: 500px;
+                background-color: transparent;
+                border: 1px solid transparent;
+                    
+                margin-left: 10px;
+                
+            }
+            
+            h1{
+                
+                text-align: center;
+                font-size: 40px;
+                color: white;
+               
+                   
+            }
+            .sudha{
+                width: 600px;
+                height: 50px;
+                margin-left: 120px;
+                margin-top: 50px;
+                
+                border: 2px solid #cc9900;
+                
+            }
+            h2{
+                
+                font-size: 25px;
+                margin-left: 15px;
+                color:white;
+                margin-left: 30px;
+                
+                
+            }
+            a{
+                
+                
+            }
+            .fa-search{
+                width: 20px;
+                height: 20px;
+                
+                
+            }
+            .fa-search:before{
+                
+                content: "\f002";
+            }
+            
+            
+            
 
         </style>
     </head>
     <body>
         <div class="row">
 
-            
-            <div class="col-md-8 menu">
-
+            <div class="col-md-2 sun">
                 
-                    <ul id="items">
-                        <li>SIGN UP</li>
-                        <li>LOGIN</li>
-                        <li>COMMUNITIES</li>
-                        <li>HOW IT WORKS</li>
-                        <li> <a id="link_1" href="https://www.carpoolarabia.com/" alt="carpool arabia"/>POST A RIDE</li>
-                        
+                
+                <div class="logo"><a class="link1" href="https://www.carpoolarabia.com/" alt="carpool arabia"/>Carpool Arabia</div>
+            </div>
+            <div class="col-md-10 menu">
 
-                    </ul>
-               
+
+                <ul id="items">
+                    <li>SIGN UP</li>
+                    <li>LOGIN</li>
+                    <li>COMMUNITIES</li>
+                    <li>HOW IT WORKS</li>
+                    <li> 
+                        <a class="link2" href="https://www.carpoolarabia.com/">POST RIDE</a>
+                    </li>
+
+
+                </ul>
+
+
             </div>
         </div>
-    </body>
+        <div class="row">
+            
+                <div class="col-md-12 lower_menu"><h1>6 TIMES CHEAPER THAN A TAXI</h1>
+            
+                    <input class="sudha" type="text" name="palce" placeholder="WHERE YOU LIKE TO GO..."><a href="font/"</a> <i class="fa-search" fa-search>/</> </input>
+                
+                                  
+                <h2>SPREAD THE WORD</h2>
+            </div>     
+                  
+        </div>
+        <</body>
 </html>
