@@ -10,26 +10,259 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="screen">
         <link rel="stylesheet" type="text/css" href="css/font-awesome.css" media="screen">
         <style type="text/css">
-            
+
             body{
                 background-color: #999999;
             }
-            .row{
-                
-                
-                
+
+
+            .blue{
+                border: 1px solid transparent;
+                background-color: #996600;
                 height: 100px;
-                border: 2px solid red;
-                background-color: #336600;
+
             }
+            .bloom{
+                border: 1px solid transparent;
+                background-color:#9999ff;
+                height: 100px;
+            }
+
+            .flower{
+
+
+
+                margin-left: 50px;
+                margin-top: 30px;
+            }
+            .list{
+
+                background-image: url("black.jpg");
+                height: 100px;
+                border: 1px solid transparent;
+
+            }
+            #items{
+
+
+
+                float: right;
+
+            }
+            li{
+                display: inline-block;
+                font-size: 14px;
+                font-family: sans-serif;
+                color:#3333ff;
+                padding-right: 25px;
+                line-height: 100px;
+
+            }
+            li:hover{
+                color: white;
+            }
+            .fa-music:before{
+                content: "\f001"
+
+            }
+            .fa-play-circle-o:before
+            {
+                content: "\f01d"
+
+            }
+            .fa-facebook-square:before{
+                content: "\f082"
+            }
+            .fa-twitter:before{
+                content: "\f099"
+            }
+            .fa-envelope-o:before{
+                content: "\f003"
+            }
+            .fa-gamepad:before{
+                content: "\f11b"
+            }
+            .fa-google:before{
+                content: "\f1a0"
+            }
+            .fa-spinner:before{
+                content: "\f110"
+            }
+
+            .lower{
+
+                height: 50px;
+                margin-top: 10px;
+                background-color: white;
+                border: 1px solid transparent;
+
+            }
+            #yes{
+
+                width: 150px;
+                height: 30px;
+                background-color: blue;
+                color: white;
+                border: 1px solid transparent;
+                border-radius: 5px;
+                margin-top: 10px;
+                font-size: 14px;
+            }
+            #no{
+
+                border: 1px solid transparent;
+                width: 90px;
+                height: 30px;
+                background-color: grey;
+                color: black;
+                border-radius: 5px;
+                margin-top: 10px;
+                font-size: 14px;
+            }
+            #yes:hover{
+
+                background-color: #3333ff;
+            }
+            #no:hover{
+                background-color: #999999;
+            }
+            .square{
+
+                height: 50px;
+
+                background-image: url("black.jpg");
+
+                margin-left: 2px;
+                margin-top: 24px;
+
+            }
+
+            #pic{
+                width:50px;
+                height: 40px;
+                float: left;
+                margin: auto;
+            }
+            #pic:hover{
+                display: none;
+
+            }
+
+
+            .square #pic:hover {
+
+                background-image: url("cube.jpg");
+                width:50px;
+                height: 40px;
+                float: left;
+                margin: auto;
+
+
+            }
+            h1{
+                font-size: 17px;
+                color: white;
+                font-family: fantasy;
+                text-align: center;
+            }
+            h1:hover{
+                color: #00cc99;
+            }
+            #items li i:before{
+                padding-right: 7px;
+            }
+            .group{
+
+                height: 100px;
+                border: 1px solid red;
+                background-color:#9999ff;  
+
+
+            }
+            .fa-caret-down:before {
+                content: "\f0d7";
+            }
+            .group_items{
+
+                height: 50px;
+                border: 1px solid transparent;
+                margin-top: 10px;
+                overflow: hidden;
+                background-color: white;
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+                text-align: center;
+            }
+
+
         </style>
-               
+
     </head>
     <body>
         <div class="row">
+
+            <div class="col-md-9 col-xs-10 col-md-push-3 blue">Haiiiii <mark><b>how are you??</b></mark></div>
+            <div class="col-md-3 col-md-pull-9 bloom"></div>
+
+        </div>
+        <div class="col-md-8 img-thumbnail img-rounded help-block  flower"><img src="bee.jpeg" alt="bee"/>bee</div>
+
+        <div class="col-md-12 list">
+
+            <div class="col-md-2 square"><img id="pic" src="abc.gif" alt="abc"/>
+                <h1>Dance in the Rain!!</h1>
+
+
+            </div>
+            <ul id="items">
+
+                <li><i class="fa fa-music"></i>Music</li>
+                <li><i class="fa fa-play-circle-o"></i>Movies</li>
+                <li><i class="fa fa-facebook-square"></i>Facebook</li>
+                <li><i class="fa fa-twitter"></i>Twitter</li>
+                <li><i class="fa fa-envelope-o"></i>Gmail</li>
+                <li><i class="fa fa-gamepad"></i>Games</li>
+                <li><i class="fa fa-google"></i>Google</li>
+                <li><i class="fa fa-spinner"></i>Astrology</li>
+
+            </ul>
+
+        </div>
+        <div class=" col-md-3 form-actions lower">
+
+            <button type="submit" id="yes">Ready to Go</button>
+            <button type="submit" id="no">Cancel</button>
+
+        </div>
+
+        <div class=" col-md-2 group_items">
             
-            <div class="col-md-8 col-md-push-4"></div>
-            <div class="col-md-4 col-md-pull-8"></div>
+                <a><i class="fa fa-user">User</i></a>
+                <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">
+                    <span class=" fa fa-caret-down"></span>
+                </a>
+           
+            <ul class="dropdown-menu">
+                <li>
+                    <a href="#">
+                        <i class="fa fa-home fa-fw dropdown"</i>Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-edit fa-fw"</i>Edit
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-calculator fa-fw"</i>Calculator
+                    </a>
+                </li>
+
+            </ul>
+
+
         </div>
     </body>
 </html>
