@@ -1,0 +1,104 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.css" media="screen">
+        <Style type="text/css">
+
+
+            body{
+                background-color: #9999ff;
+            }
+            #items{
+
+                width:200px;
+                height: 100px;
+                margin-top: 9px;
+
+
+
+            }
+            #items #value{
+
+                width:100px;
+                height: 30px;
+                background-color: #999999;
+                color: #990033;
+
+                text-align: center;
+                font-size: 15px;
+                font-family: cursive;
+                border-radius: 150px;
+                box-shadow: 2px 2px 2px #990033;
+                
+
+
+
+            }
+            #items #value:hover{
+
+                opacity: .4;
+                background-color: #ffcc00;
+                color: #000000;
+                font-family: sans-serif;
+                border-radius: 150px;
+            }
+            input:valid{
+
+                border: 2px solid green;
+            }
+            input:invalid{
+
+                border: 2px solid red;
+            }
+            #job{
+
+                margin-top:10px;
+                margin-right: 10px;
+                float: right;
+
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="list items">Registration Form!!
+
+            <form>
+                <ul>
+
+                    <li id="items">
+                        <input type="text" required placeholder="Type your name"></br></br>
+                        <input required type="email" placeholder="Email"></br></br>
+                        <input type="text" required placeholder="place"></br></br>
+                        <input required type="tel"  placeholder="phone Number"></br></br>
+                        <input type="text" required placeholder="Qualification"></br></br>
+                        <input type="text" required placeholder="District"></br></br>
+                        <input type="text" required placeholder="State"></br></br>
+                        <input required type="date" placeholder="Date of Birth"></br></br>
+                        Gender
+                        
+                        </br>
+                        <input type="radio"name="sex" value="male">Male
+                        <input type="radio"name="sex" value="female">FeMale</br></br>
+                        <input id="value" type="submit" type="submit" value="submit" placeholder="Submit"></br>
+                    </li>
+
+                </ul>
+            </form>
+        </div>
+        <form id="job">
+            <label for="choose">Looking for a job??</label>
+
+            <button>Click Me!!</button>
+        </form>
+
+    </body>
+</html>
