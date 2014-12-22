@@ -1,0 +1,98 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dropdown Menu</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.css" media="screen">
+        <style type="text/css">
+
+            body{
+                background-color: #999999;
+            }
+            .btn_group{
+
+                height: 50px;
+                border: 1px solid transparent;
+                margin-top: 10px;
+                overflow: hidden;
+                background-color: white;
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+                text-align: center;
+            }
+            .dropdown-menu ul{
+                display: block;
+
+            }
+            .dropdown-menu ul li{
+                display: block;
+
+            }
+            .zoo{
+
+                width:100px;
+                height: 50px;
+                background-color:#9999ff;
+                color: black;
+                font-size: 16px;
+                display: inline;
+            }
+            .zoo li {
+                display: block;
+                position: relative;
+            }
+            .zoo ul{
+
+                display: block;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <div class="btn-group">
+            <a class="btn btn-primary" href="items">
+                <i class="icon-user icon-white"></i> User
+            </a>
+            <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">
+                <span class="caret"></span></a>
+
+            <ul class="dropdown-menu">
+                <li><a href="edit"><i class=" fa fa-pencil"></i> Edit</a></li>
+                <li><a href="delete"><i class="fa fa-recycle"></i> Delete</a></li>
+                <li><a href="Ban"><i class="fa fa-ban"></i> Ban</a></li>
+                <li class="divider"></li>
+                <li><a href="#"><i class="i"></i> Choose another</a></li>
+            </ul>
+        </div>
+
+        <div class="zoo">
+            <ul id="zoo_1">
+                <li id="zoo-1">
+                    <a href="">Birds</a>
+                    <ul>
+                        <li><a href="">Crow</a></li>
+                        <li><a href="">Parrot</a></li>
+                        <li><a href="">Peacock</a></li>
+                    </ul>
+                </li>
+                <ul id="zoo_2">
+                    <li id="zoo-2">
+                        <a href="">Mammals</a>
+                        <ul >
+                            <li><a href="">Elephant</a></li>
+                            <li><a href="">Goat</a></li>
+                            <li><a href="">Tiger</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+    </body>
+</html>
