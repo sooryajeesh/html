@@ -1,0 +1,373 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.css" media="screen">
+        <style type="text/css">
+
+            .box_1 { 
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                top: 20px;right:60px;
+
+                background: #ee3e64;
+            }
+
+            .box_2 { 
+                position: absolute;
+                width: 200px;
+                top: 40px;right: 40px;
+                height: 200px;
+                background: #44accf;
+            }
+
+            .box_3 { 
+                position:  absolute;
+                width: 200px;
+                height: 200px;
+                top: 70px;right: 20px;
+                background: #b7d84b;
+            }
+            .box1 { 
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                top: 20px;left: 60px;
+
+                background: #ee3e64;
+            }
+
+            .box2 { 
+                position: absolute;
+                width: 200px;
+                top: 40px;left: 40px;
+                height: 200px;
+                background: #44accf;
+            }
+
+            .box3 { 
+                position:  absolute;
+                width: 200px;
+                height: 200px;
+                top: 70px;
+                left: 20px;
+                background: #b7d84b;
+            }
+            .boxbar1{
+
+                width: 497px;
+                height: 200px;
+                background-image: url("dancerain.jpeg");
+                color: white;
+                position: absolute;
+                top: 20px;
+                left: 280px;
+
+            }
+            .boxbar2{
+
+                width: 200px;
+                height: 200px;
+                background-image:url("social.jpeg");
+                color: white;
+                position: absolute;
+                top: 20px;
+                left: 800px;
+                border-radius: 100px;
+
+            }
+            .long{
+
+                width: 800px;
+                height: 39px;
+                background-color: #cccccc;
+                position: relative;
+                box-shadow: 4px 4px 2px gray;
+                top: 230px;
+                left: 240px;
+            }
+
+            p{
+
+                color: white;
+                font-size: 15px;
+                font-family: sans-serif;
+                font-weight: bold;
+            }
+            h1,h2,h3{
+
+                color: white;
+                font-size: 17px;text-decoration: underline;
+                text-align: center;
+            }
+            p:hover{
+                color:white;
+                background-color: #999999;
+            }
+            h1:hover{
+                color: #999999;
+            }
+            h2:hover{
+                color: #999999;
+            }
+            #cool_1 li{
+                color: white;
+                font-size: 14px;
+            }
+            #cool_1 li:hover{
+                color: #6666ff;
+                cursor: pointer;
+            }
+            #items1 li{
+                display: inline-block;
+                padding: 7px;
+                color: black;
+
+            }
+            #items1 li:hover{
+                color: white;
+                text-decoration: none;
+                cursor:pointer;
+            }
+            .menubar{
+
+
+                width:150px;
+                height: 100px;
+                background-color:#cccccc;
+                box-shadow: 4px 4px 2px gray;
+
+                border-radius:7px;
+                position: relative;
+                top: 290px;
+                left: 20px;
+                text-align: center;
+                line-height: 100px;
+
+
+            }
+
+            .fa-envelope-o:before { 
+
+
+                content: "\f003";
+                line-height: 100px;
+                margin-left: 10px;
+                padding: 5px;
+                font-size: 16px;
+                color: red;
+                cursor: pointer;
+
+
+
+
+            }
+
+            .agecalc{
+                width: 400px;
+                height: 200px;
+                background-color: #cccccc;
+                box-shadow: 4px 4px 2px gray;
+                border-radius: 5px;
+                position: absolute;
+                top: 300px;
+                left: 300px;
+            }
+            .dob{
+                width: 200px;
+                height:40px;
+                border: 1px solid transparent;
+                text-align: center;
+                font-weight: bold;
+                line-height: 40px;
+
+
+
+
+            }
+            .dob:hover{
+                color: #cc3300;
+
+            }
+            .present{
+                width: 200px;
+                height:40px;
+                border: 1px solid transparent;
+                text-align: center;
+                font-weight: bold;
+                line-height: 40px;
+                position: absolute;
+                top:50px;
+                left: 200px;
+
+
+            }
+            .present:hover{
+                color: #cc3300;
+
+            }
+            #btn1{
+                width: 150px;
+                height: 35px;
+                border: 1px solid transparent;
+                box-shadow: 4px 4px 2px gray;
+                position: absolute;
+                top: 150px;
+                left:130px;
+                border-radius: 20px;
+                cursor: pointer;
+                font-weight: bold;
+
+
+            }
+            #btn1:hover{
+                color: #cc3300;
+                border: 1px solid #cc3300;
+            }
+            #btn2:hover{
+                color: #cc3300;
+                border: 1px solid #cc3300;
+            }
+            h3{
+                color: black;
+
+            }
+            h3:hover{
+                color: #cc3300;
+            }
+            .form_1{
+
+
+                width: 300px;
+                height: 150px;
+                border: 1px solid transparent;
+                border-radius: 10px;
+                background-color: #cccccc;
+                box-shadow: 4px 4px 2px gray;
+                position: absolute;
+                top: 300px;
+                left: 900px;
+            }
+            #btn2{
+
+                width: 90px;
+                height: 30px;
+                border: 1px solid transparent;
+                box-shadow: 4px 4px 2px gray;
+                position: absolute;
+                top: 100px;
+                left:100px;
+                border-radius: 20px;
+                cursor: pointer;
+                font-weight: bold;
+            }
+            h4{
+                color: black;
+            }
+            h4:hover{
+                color: #cc3300;
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "box_1"> yfegb  fg
+
+        </div>
+
+
+
+        <div class = "box_2" > dkuf yhueevw qew </div>
+        <div class = "box_3" > 343 trgb 56 </div>
+        <div class = "box1" > Haiii </div>
+
+
+
+        <div class = "box2"> dkuf yhueevw qew </div>
+        <div class = "box3"> 343 trgb 56 </div>
+        <div class = "boxbar1"> <h1> Dane in the Rain!! </h1>
+            <p id = "dance" >
+                Dance in the rain
+                With clouds at your heels
+                Rosebuds refreshed
+                The calming one feels... </br>
+
+                Life is the present
+                There's no need to wait
+                Throw back the shutters
+                And unlock the gate... </br>
+
+                As it cleanses the sky
+                No tears on sun's cheeks
+                And no need to cry... </br>
+
+                Life is what's happening
+                Through clouds or gray
+                Sunshine or snowflakes
+                They're all nature's way....!! </br>
+
+
+            </p></div >
+        <div class = "boxbar2" > <h2> Select Yours!! </h2>
+            <ul id = "cool_1" >
+                <a><li> Facebook </li></a>
+                <a><li> Twitter </li></a>
+                <a><li> You Tube </li></a>
+                <a><li> E Mail </li></a>
+                <a><li> LinkedIn </li></a>
+                <a><li> Flipkart </li></a>
+                <a><li> Pinterest </li></a>
+            </ul>
+        </div>
+        <div class = "long" >
+            <nav>
+                <ul id = "items1" >
+                    <a href = "http://www.mio.to" target = "_blank"> <li> Music </li></a>
+                    <a href = "http://www.nowrunning.com"> <li> Movies </li></a>
+                    <a href = "http://www.miniclip.com"> <li> Games </li></a>
+                    <a href = "https://www.youtube.com"> <li> Videos </li></a> 
+                    <a href = "http://www.photography.nationalgeographic.com"> <li> Photos </li></a>
+                    <a> <li> Documentary </li></a>
+                    <a href = "http://thehindu.com"> <li> News </li></a >
+                    <a> <li> Adds </li></a>
+                    <a href = "http://www.sooryadanceintherain.blogspt.com">  <li> Blogs </li></a>
+                    <a href = "http://www.wallpapers.com"> <li> Wallpapers </li></a>
+                    <a href = "http://www.tutsplus.com"> <li> Tutorials </li></a>
+                </ul>
+            </nav>
+        </div>
+        <div class = "menubar" > E Mail
+            <a href = "http://www.sitepoint.com/introduction-icon-fonts-font-awesome-icomoon/" title = "mail" >
+                <i class = "fa fa-envelope-o"> </i></a> </div>
+
+        <div class = "agecalc" > <h3> Calculate your Age </h3>
+            <div class = "dob" > Enter DOB
+                <input type = "date" name="date1" placeholder="dd/mm/yy"/> </div>
+
+            <div class = "present"> Present Date
+
+                <input type = "date" name="date2" placeholder="dd/mm/yy"/> 
+            </div>
+
+            <button type = "button" id = "btn1" > Calculate Age </button>
+        </div>
+        <div class="form_1">
+            <form action>
+                <h4>Songs via E Mail..</h4></br>
+                <input type="text" name="name" placeholder="Type Your E Mail"/>
+                <input type="password" name="pwd" placeholder="Type Your Password"/>
+                <button type = "button" id = "btn2" > Login </button>
+
+            </form>
+        </div>
+
+
+
+    </body>
+</html>
