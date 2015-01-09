@@ -1,0 +1,104 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.css" media="screen">
+        <style type="text/css">
+            .card-container {
+                height: 300px;
+                perspective: 600;
+                position:absolute;
+                top: 20px;
+                left: 20px;
+                width: 300px;
+                border: 2px solid transparent;
+
+            }
+            .card {
+                width:260px;
+                height: 260px;
+                position: absolute;
+                border: 2px solid transparent;
+                left: 20px;
+                top: 20px;
+                border-radius: 150px;
+
+                transform-style: preserve-3d;
+                transition: all 1s ease-in-out;
+
+            }
+
+            .card:hover {
+                transform: rotateY(180deg);
+                background-color: violet;
+
+            }
+            .card .back img{
+
+
+
+                width: 200px;
+                height:200px; 
+                position:absolute;
+
+
+            } 
+
+
+            .card .side img {
+                backface-visibility: hidden;
+                height: 240px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 240px;
+            }
+            .card .side:hover .back {
+
+
+                position: absolute;
+                top: 900px;
+                left: 20px;
+                width: 200px;
+                height: 200px;
+            }
+
+
+
+            @keyframes slide {
+                0% {
+                left: 0;
+                top: 0;
+            }
+            50% {
+                left: 200px;
+                top: 200px;
+            }
+            100% {
+                left: 500px;
+                top: 0;
+            }
+            }
+
+
+
+
+        </style>
+    </head>
+    <body>
+        <div class="card-container">
+            <div class="card">
+                <div class="side">
+                    <img src="smile.jpeg" alt="hii"/></div>
+                <div class="back">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

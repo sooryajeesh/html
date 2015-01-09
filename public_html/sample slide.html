@@ -1,0 +1,92 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.css" media="screen">
+        <style type="text/css">
+            body{
+                font-family:sans-serif; 
+                font-weight: 300;
+            }
+            .css-slideshow{
+                position: relative;
+                max-width: 495px;
+                height: 370px;
+                margin: 5em auto .5em auto;
+            }
+            .css-slideshow figure{
+                margin: 0;
+                max-width: 495px;
+                height: 370px;
+                background: #000;
+                position: absolute;
+            }
+            .css-slideshow img{
+                box-shadow: 0 0 2px #666;
+            }
+            .css-slideshow figcaption{
+                position: absolute;
+                top: 0;
+                color: #fff;
+                background: rgba(0,0,0, .3);
+                font-size: .8em;
+                padding: 8px 12px;
+                opacity: 0;
+                transition: opacity .5s;
+            }
+            .css-slideshow:hover figure figcaption{
+                transition: opacity .5s;
+                opacity: 1;
+            }
+            .css-slideshow-attr{
+                max-width: 495px;
+                text-align: right;
+                font-size: .7em;
+                font-style: italic;
+                margin:0 auto;
+            }
+            .css-slideshow-attr a{
+                color: #666;
+            }
+            .css-slideshow figure{
+                opacity:0;
+            }
+            figure:nth-child(1) {
+                animation: xfade 48s 42s infinite;
+            }
+            figure:nth-child(2) {
+                animation: xfade 48s 36s infinite;
+            }
+            
+            @keyframes xfade{
+                0%{
+                opacity: 1;
+            }
+           100% {
+                opacity: 1;
+            }
+            
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="css-slideshow">
+            <figure>
+                <img src="slide1.jpg" alt="class-header-css3" width="495" height="370"/>
+                <figcaption><strong>CSS3:</strong> CSS3 delivers a wide range of stylization and effects, enhancing the web app without sacrificing your semantic structure or performance. Additionally Web Open Font Format (WOFF) provides typographic flexibility and control far beyond anything the web has offered before.</figcaption> 
+            </figure>
+            <figure>
+                <img src="slide2.jpg" alt="class-header-semantics" width="495" height="370"/>
+                <figcaption><strong>Semantics:</strong> Giving meaning to structure, semantics are front and center with HTML5. A richer set of tags, along with RDFa, microdata, and microformats, are enabling a more useful, data driven web for both programs and your users.</figcaption> 
+            </figure>
+        </div>
+    </body>
+</html>

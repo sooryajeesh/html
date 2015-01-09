@@ -5,7 +5,7 @@ and open the template in the editor.
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+        <title>Calender</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="screen">
         <link rel="stylesheet" type="text/css" href="css/font-awesome.css" media="screen">
@@ -16,11 +16,27 @@ and open the template in the editor.
                 font:20px sans-serif;
                 color: white;
                 display:inline;
-                margin:0;padding:0;
+                margin:0;
+                padding:0;
                 background-color: #999900;
 
             }
-
+            h1{
+                float: right;
+                color: black;font-weight: bold;
+                font-size: 18px;
+                margin-right: 5px;
+                font-family: fantasy;
+                transform: rotate(25deg);
+                margin-top: 30px;
+                
+                 
+            }
+            h1:hover{
+               color: white;
+                transition: color 0.9s ease-in-out;
+                
+            }
 
             li		{
                 list-style:none;
@@ -50,7 +66,9 @@ and open the template in the editor.
 
             }
             li ol li:hover{
-                border: 1px solid black;
+                border: 1px solid #cccc00;
+                box-shadow: 5px 5px 5px black;
+                border-radius: 10px;
                 width:80px;
                 height: 80px;
                 background-color: #cccc00;
@@ -74,6 +92,7 @@ and open the template in the editor.
         </style>
     </head>
     <body>
+        <h1> My Calender</h1>
         <div class="cal">
             <ol div class="calender">
 
