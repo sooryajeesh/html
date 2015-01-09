@@ -1,0 +1,509 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flowers n Fruits</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.css" media="screen">
+        <style type="text/css">
+
+            div.header
+            {
+                width: 1170px;
+                height: 112px;
+                margin: 0;
+                padding: 0;
+                border:1px solid transparent;
+                position: absolute;
+                left: 50px;
+                right: 50px;
+            }
+            #ff{
+
+                height: 150px;
+                width: 300px;
+                position: absolute;
+                left: 60px;
+            }
+            h1{
+
+                font-size:16px;
+                font-family: sans-serif;
+                position: absolute;
+                top: 20px;
+                left: 445px;
+                color:#666666;
+            }
+            #bike{
+
+                position: absolute;
+                left: 400px;
+                top: 58px;
+                width: 50px;
+                height: 50px;
+                opacity: .4;
+
+
+            }
+            #del{
+                font-size: 14px;
+                font-family: sans-serif;
+                position: absolute;
+                top: 60px;
+                left: 456px;
+                color:#990000;
+
+            }
+            .cart{
+                border: 1px solid transparent;
+                border-radius: 5px;
+                background-color: #cccccc;
+                width: 370px;
+                height: 50px;
+                position: absolute;
+                top: 0px;
+                right: 0px;
+
+
+
+
+
+            }
+            .cart ul li  {
+
+                display: inline-block;
+
+                padding: 5px;
+
+
+
+
+            }
+            .cart ul li a{
+                color: #b30707;
+                font-size:14px;
+            }
+            .phone_no a {
+
+                position: absolute;
+                left: 740px;
+                top: 60px;
+                font-size: 15px;
+                font-weight: bold;
+                color: gray;
+                text-decoration: none;
+
+
+            }
+            #search_1{
+
+                position: absolute;
+                left:900px;
+                margin-top: 14px;
+                top: 50px;
+                border: 1px solid gray;
+                border-radius: 5px;
+
+                color: #666666;
+                width: 150px;
+                height: 35px;
+                text-align: center;
+
+            }
+            .search_btn img{
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                left: 1060px;
+                top: 74px;
+                cursor: pointer;
+
+            }
+            .col-md-12{
+
+                border: 1px solid #b30707;
+                height: 50px;
+                background-color: #b30707;
+                position: absolute;
+                top: 109px;
+                margin: 0 auto;
+            }
+            #list_items li{
+                display: inline-block;
+
+                padding: 12px 12.5px;
+
+
+            }
+            #list_items li a{
+                color: white;
+                font-size: 17px;
+                font-family: sans-serif;
+                font-weight: bold;
+                display: block;
+            }
+            #list_items li a:hover{
+                background-color:#999999;
+                text-decoration: none;
+
+
+            }
+            .slide_show {
+                width:1245px;
+                height: 700px;
+                margin: 0 auto;
+                border: 1px solid transparent;
+                position: absolute;
+                top: 157px;
+
+
+            }
+
+
+
+            .slide_show img{
+
+
+                width: 1245px;
+                height: 700px;
+                position: absolute;
+                margin-left: 2px;
+                top: 0px;
+            }
+            .slide_show figure{
+
+
+                width: 1245px;
+                height: 700px;
+                margin:0 auto;
+                position: relative
+            }
+            .slide_show figure img{
+
+                position: absolute;
+                left: 0; 
+                top: 0;
+
+
+            }
+
+            .slide_show:hover figure {
+
+                -webkit-transition: image 0.6s ease;
+                -moz-transition:    all 0.6s ease;
+                -o-transition:      all 0.6s ease;
+                opacity: .4;
+            }
+            figure .slide_show img:first-child
+            {
+                position: relative;
+            }
+            figure:nth-child(1) {
+                animation: 48s 42s infinite;
+
+            }
+            figure:nth-child(2) {
+                animation:  48s 36s infinite;
+            }
+            figure:nth-child(3) {
+                animation:  48s 30s infinite;
+            }
+
+            @keyframes {
+
+                0%{
+                opacity: 0;
+            }
+            20% {
+                opacity:1;
+            }
+            80%{
+                opacity: 1
+            }
+
+            100% {
+                opacity:0;
+            }
+            }
+
+            .sub_menu{
+                width: 1250px;
+                height: 80px;
+                border: 1px solid transparent;
+                position: absolute;
+                top: 859px;
+                left: 5px;
+                background: linear-gradient(#cccccc,#ffcc99);
+            }
+            .sub_menu li{
+                display: inline-block;
+                padding-left: 50px;
+                font-size: 18px;
+                font-family: sans-serif;                   
+                color: #b70511;
+                line-height: 80px;
+                position: relative;
+                left:220px;
+                cursor: pointer;
+
+
+
+
+            }
+            ul:after{
+                clear: both;
+                display: block;
+            }
+            .sub_menu ul li:hover{
+                color:#666666;
+            }
+
+
+            .area{
+                width: 1250px;
+                margin: 0 auto;
+                border: 1px solid #999999;
+                border-left: 1px solid #999999;
+                border-left-style: dashed;
+                border-right:  1px solid #999999;
+                border-right-style: dashed;
+                position: absolute;
+                top:960px;
+                height: auto;
+                left: 5px;
+            }
+            .best{
+
+                width: 1170px;
+                height: 50px;
+                border: 1px solid transparent;
+                border-bottom: 1px solid #999999;
+                border-bottom-style:dashed;
+                position: absolute;
+                left: 40px;
+
+            }
+            h5{
+
+                font-size: 18px;
+                position: absolute;
+                left:40px;                
+                margin-left: 10px;
+                color: #b70511;
+                line-height: 50px;
+            }
+            .best-images{
+                width: 220px;
+                height: 300px;
+                border: 1px solid #999999;
+                margin-top:80px;
+                margin-left: 3px;
+
+
+            }
+            #list_images li{
+                display: inline-block;
+                margin-right: 10px;
+
+
+            }
+            #list_images li .best-images img{
+                width: 222px;
+                height: 270px;
+                padding: 5px;
+
+
+
+
+
+            }
+            #para{
+
+                margin-top: 8px;
+                font-size: 16px;
+                font-weight: bold;
+                color: black;text-align: center;
+
+
+            }
+            .best-images #list_images li img span{
+                
+                width: 50px;
+                height: 20px;
+                border: 1px solid red;
+                background-color:#999999;
+                color: white;
+                font-size: 14px;
+               
+                
+                
+            }
+
+
+
+
+
+
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <a><img id="ff" src="fruits.jpg" alt="fruitss"</a>
+            <span class="delivery">
+                <h1>Same day delivery in India</h1>
+                <img id="bike" src="delivery.jpeg" alt="bike"/>
+                <p id="del">Need Delivery Today ?</br>
+                    Place order before 4.00 pm</p>
+
+
+            </span>
+            <div class="cart">
+
+                <ul id="cart_items">
+                    <li><a href="http://flowersnfruits.com/order-tracking">TRACK ORDER</a></li>
+                    <li><a href="http://flowersnfruits.com/instapay">InstaPay</a></li> 
+                    <li><a href="http://flowersnfruits.com/mycart/india">MY CART<span>(0)</span></a></li>
+                    <li><a href="http://flowersnfruits.com/user-login">Login</a></li>    
+                </ul>
+            </div>
+            <span class=" phone_no">
+
+                <a href="#">+91-9446864455</br>
+                    +91-8089640719
+
+                </a>
+            </span>
+            <input id="search_1" type="search" placeholder="Looking for Flowers"/>
+            <span class="search_btn"><a><img src="search.png" alt="haii"/><a></span>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+
+                                <nav>
+                                    <ul id="list_items">
+
+                                        <li><a>Home</a></li>
+                                        <li><a>Products</a></li>
+                                        <li><a>Occassions</a></li>
+                                        <li><a>weekly Offer</a></li>
+                                        <li><a>varieties</a></li>
+                                        <li><a>Color</a></li>
+                                        <li><a>Price</a></li>
+                                        <li><a>Delivery Areas</a></li>
+                                        <li><a>Custom Roses</a></li>
+                                        <li><a>Contact Us</a></li>
+
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="slide_show">
+                            <figure>
+                                <img id="main1" src="slide1.jpg" alt="h65oooi"/>
+                            </figure>
+
+
+                        </div>
+
+                        <div class="sub_menu">
+
+                            <ul>
+
+                                <a><li>FLOWERS</li></a>
+                                <a><li>CAKES</li></a>
+                                <a><li>CHOCOLATES</li></a>
+                                <a><li>BEST SELLER</li></a>
+                                <a><li>ROSES</li></a>
+                            </ul>
+                        </div>
+                        <section class="area">
+                            <div class="best"><h5>BEST SELLERS</h5>
+                                <ul id="list_images">
+
+                                    <li id="pic_1"> <div class="best-images">
+                                            <img src="pic333.jpeg" alt="booi"/> 
+                                            <span>Buy Now</span>
+                                            <p id="para">Golden Shower</p>
+                                    </li>
+                                    <li id="pic_2">
+                                        <div class="best-images">
+                                            <img src="pic2.jpeg" alt="booi"/>
+                                            <span>Buy Now</span>
+                                            <p id="para">Passionate</p>
+                                    </li>
+                                    <li id="pic_3">
+                                        <div class="best-images">
+                                            <img src="pic3.jpeg" alt="booi"/>
+                                            <span>Buy Now</span>
+                                            <p id="para">Beauty Glory</p>
+                                    </li>
+                                    <li id="pic_4">
+                                        <div class="best-images">
+                                            <img src="pic4.jpeg" alt="booi"/>
+                                            <span>Buy Now</span>
+                                            <p id="para">Shining Orange</p>
+                                    </li>
+                                    <li id="pic_6">
+                                        <div class="best-images">
+                                            <img src="pic444.jpeg" alt="booi"/>
+                                            <span>Buy Now</span>
+                                            <p id="para">Blooming Lavender</p>
+                                    </li>
+                                    <li id="pic_7"> <div class="best-images">
+                                            <img src="pic7.jpeg" alt="booi"/>
+                                            <span>Buy Now</span>                                                                                                                                                >Buy Now</span>
+                                            <p id="para">Morning Rose</p>
+                                    </li>
+                                    <li id="pic_8">
+                                        <div class="best-images">
+                                            <img src="pic8.jpeg" alt="booi"/>
+                                            <span>Buy Now</span>
+                                            <p id="para">Red Love Green</p>
+                                    </li>
+                                    <li id="pic_9">
+                                        <div class="best-images">
+                                            <img src="pic9.jpeg" alt="booi"/>
+                                            <span>Buy Now</span>
+                                            <p id="para">Blossoming</p>
+                                    </li>
+                                    <li id="pic_10">
+                                        <div class="best-images">
+                                            <img src="pic10.jpeg" alt="booi"/>
+                                            <span>Buy Now</span>
+                                            <p id="para">Romantic Pink</p>
+                                    </li>
+                                    <li id="pic_11">
+                                        <div class="best-images">
+                                            <img src="pic11.jpeg" alt="booi"/>
+                                            <span>Buy Now</span>
+                                            <p id="para">Orchid Lavender</p>
+                                    </li>
+                                    <li id="pic_12">
+                                        <div class="best-images">
+                                            <img src="pic12.jpeg" alt="booi"
+                                            <span>Buy Now</span>
+                                            <p id="para">Romantic Red</p>
+                                    </li>
+                                    <li id="pic_13">
+                                        <div class="best-images">
+                                            <img src="pic13.jpeg" alt="booi"/>
+                                            <span>Buy Now</span>
+                                            <p id="para">White Beauty</p>
+                                    </li>
+
+
+                                </ul>  
+                            </div>
+
+
+
+
+                            </div>
+                        </section>
+
+                        </body>
+                        </html>
