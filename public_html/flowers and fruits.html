@@ -337,19 +337,235 @@ and open the template in the editor.
                 background-color: #cccccc;
                 color: white;
                 margin-left: 85px;
+
+            }
+            .buy:hover{
+                width: 30px;
+                height: 20px;
+                border:1px solid #cccccc;
+                background-color:#cccccc;
+                color: #b30707;
+                margin-left: 85px;
+
+            }
+
+
+            .adds{
+
+                width:1120px;
+                height:300px;
+                border: 1px solid #999999;
+                border-style: dashed;
+                border-radius: 50px;
+                background-color: white;
+                margin-top: 2200px;
+                margin-left: 85px;
+            }
+            .add_head{
+                width:500px;
+                height:240px;
+
+                border-bottom: 1px solid #990000;
+                border-top: 1px solid  #990000;
+                border-bottom-style: dashed;
+                border-top-style: dashed;
+
+                font-size: 30px;
+                color: #990000;
+                font-family: fantasy;
+                margin:30px;
+                text-align: left;
+
+
+
+            }
+
+
+
+
+
+
+
+            .add_head button{
+
+                width: 50px;
+                height: 50px;
+                background-color: #990000;
+                border: 1px solid transparent;
+                color: white;
+                border-radius: 40px;
+                position: relative;
+                left:10px;
+
+
+            }
+            .add_head button:hover{
+
+                color: #999999;
+                opacity: 1;
+            }
+            .note{
+                width: 1190px;
+                height: auto;
+                border: 1px solid transparent;
+                margin-left: 20px;
+                margin-top: 5px;
+            }
+
+
+            .note h1{
+
+                font-size: 22px;
+                color: #990000;
+                margin-top: 2500px;
+
+                font-family: cursive;
+
+
+            }
+            .note p:nth-child(2)
+            {
+                margin-top: 52px;
+            }
+
+            .note  p{
+                font-size: 14px;
+                color: black;
+                margin-top: 1px;
+                padding-bottom: 1px;
+            }
+
+            .customer_box{
+
+                width: 1190px;
+                height: 260px;
+                border: 2px solid transparent;
+                margin:10px 19px;
+
+            }
+            .customer_box h2{
+
+                font-size: 16px;
+                color:white;
+                background-color:#b30707;
+                text-align: center;
+                line-height: 50px;
+
+
+
+
+            }
+            .customer_box ul li{
+                border: 1px solid #cccccc;
+                width: 350px;
+                height: auto;
+                display: inline-block;
+                padding: 20px;
+                margin:5px 10px;
+            }
+            .customer_box ul li p{
+                
+                font-size: 16px;
+                text-align: center;
+            }
+            .customer_box ul li h3{
+                
+                font-size: 18px;
+                text-align: center;
+                color: #b30707;
+            }
+            .customer_box ul li h4{
+                font-size: 15px;
+                text-align: center;
+                color: #009999;
+                
+            }
+            .customer_box ul li:hover{
+                border: 1px solid #999999;
+            }
+            .review{
+                font-size:18px;
+                text-align: center;
+                color:#b30707;
+                text-decoration:underline;
+                text-decoration-style: double;
+            }
+            .below_area{
+                
+                width: 1200px;
+                height: auto;
+                border: 1px solid transparent;
+                border-top-style: dashed;
+                border-top-color: #cccccc;
+            }
+            .below_area a{
+                margin:10px 20px;
+            }
+            .footer{
+                width: 1200px;
+                height: auto;
+                border: 1px solid transparent;
+                margin:0 auto;
+                position:relative;
+                top: 200px;
+                left:0px;
+                
                 
                 
                 
             }
+            .footer ul li {
+               
+                display: inline-block;
+                padding: 20px;
+                margin: 5px 10px;
                 
+            }
+            .footer ul li h2{
+                font-size: 18px;
+                text-align: left;
+                color: #666666;
+                    
+            }
+            .footer ul li p a{
+                font-size: 17px;
+                text-align: left;
+                color: #666666;
                 
+            }
+            .footer a{
+                display: block;
+            }
+            .fa{
+                
+                color:#b30707;
+                display: block;
+                
+            }
+            .footer ul #face :before{
+                content:"\f09a";
+                color: red;
+                cursor: pointer;
+                
+            }
+            .footer ul #face1 :before{
+                content:"\f1a0";
+                color: red;
+                
+                cursor: pointer;
+            }
+            #last{
+                
+                font-size: 19px;
+                color:white;
+                height: 50px;
+                text-align: center;
+                line-height: 50px;
+                background-color:#b30707;
+                margin-top: 210px;
+                
+            }
             
-
-
-
-
-
-
         </style>
     </head>
     <body>
@@ -434,7 +650,7 @@ and open the template in the editor.
                                     <li id="pic_2">
                                         <div class="best-images">
                                             <img src="pic2.jpeg" alt="booi"/>
-                                             <a class="buy" href="#">Buy Now</a>
+                                            <a class="buy" href="#">Buy Now</a>
                                             <p id="para">Passionate</p>
                                     </li>
                                     <li id="pic_3">
@@ -446,54 +662,55 @@ and open the template in the editor.
                                     <li id="pic_4">
                                         <div class="best-images">
                                             <img src="pic4.jpeg" alt="booi"/>
-                                             <a class="buy" href="#">Buy Now</a>
+                                            <a class="buy" href="#">Buy Now</a>
                                             <p id="para">Shining Orange</p>
                                     </li>
                                     <li id="pic_6">
                                         <div class="best-images">
                                             <img src="pic444.jpeg" alt="booi"/>
-                                             <a class="buy" href="#">Buy Now</a>
+                                            <a class="buy" href="#">Buy Now</a>
                                             <p id="para">Blooming Lavender</p>
                                     </li>
-                                    <li id="pic_7"> <div class="best-images">
+                                    <li id="pic_7"> 
+                                        <div class="best-images">
                                             <img src="pic7.jpeg" alt="booi"/>
-                                            <span>Buy Now</span>                                                                                                                                                >Buy Now</span>
+                                            <a class="buy" href="#">Buy Now</a>                                                                                                                                     >Buy Now</span>
                                             <p id="para">Morning Rose</p>
                                     </li>
                                     <li id="pic_8">
                                         <div class="best-images">
                                             <img src="pic8.jpeg" alt="booi"/>
-                                             <a class="buy" href="#">Buy Now</a>
+                                            <a class="buy" href="#">Buy Now</a>
                                             <p id="para">Red Love Green</p>
                                     </li>
                                     <li id="pic_9">
                                         <div class="best-images">
                                             <img src="pic9.jpeg" alt="booi"/>
-                                            < <a class="buy" href="#">Buy Now</a>
+                                            <a class="buy" href="#">Buy Now</a>
                                             <p id="para">Blossoming</p>
                                     </li>
                                     <li id="pic_10">
                                         <div class="best-images">
                                             <img src="pic10.jpeg" alt="booi"/>
-                                             <a class="buy" href="#">Buy Now</a>
+                                            <a class="buy" href="#">Buy Now</a>
                                             <p id="para">Romantic Pink</p>
                                     </li>
                                     <li id="pic_11">
                                         <div class="best-images">
                                             <img src="pic11.jpeg" alt="booi"/>
-                                             <a class="buy" href="#">Buy Now</a>
+                                            <a class="buy" href="#">Buy Now</a>
                                             <p id="para">Orchid Lavender</p>
                                     </li>
                                     <li id="pic_12">
                                         <div class="best-images">
-                                            <img src="pic12.jpeg" alt="booi"
-                                             <a class="buy" href="#">Buy Now</a>
+                                            <img src="pic12.jpeg" alt="booi"/>
+                                            <a class="buy" href="#">Buy Now</a>
                                             <p id="para">Romantic Red</p>
                                     </li>
                                     <li id="pic_13">
                                         <div class="best-images">
                                             <img src="pic13.jpeg" alt="booi"/>
-                                             <a class="buy" href="#">Buy Now</a>
+                                            <a class="buy" href="#">Buy Now</a>
                                             <p id="para">White Beauty</p>
                                     </li>
 
@@ -507,5 +724,111 @@ and open the template in the editor.
                             </div>
                         </section>
 
+                        <div class="adds">
+                            <div class="add_head">Special offers</br> just for you
+
+                                <button type="button" name="name" vlaue="Go">Go!!</button></div>
+
+
+                        </div>
+                        <div class="note">
+
+                            <h1>Express your gratitude with flowers</h1>
+                            <p>Flowers are a perfect way to celebrate a birthday, anniversary, 
+                                or congratulate a new job. Whatever the occasion, when you want
+                                to send the freshest most eye-catching plant or floral 
+                                arrangement, look to FlowersNFruits India online florist
+                                service. Our colorful flowers and lush green plants,
+                                along with an endless selection of designs from which to choose,
+                                means you are sure to find just the right gift to delight
+                                and impress. But you don’t need to 
+                                wait for a special occasion to brighten 
+                                someone’s day, buying flowers from FlowersNFruits India can make
+                                any day feel like a special occasion.</p>
+                            <p>Our floral orders are filled by a network of knowledgeable
+                                florists located within the community. This ensures that the 
+                                flowers you receive arrive looking as fresh and lovely as possible.
+                                From a cheery assortment of daisies or tulips, to amazing plants
+                                and fragrant roses, each of our flower bouquets and arrangements
+                                is artfully designed and hand-delivered by a local florist. 
+                                Maintaining the high standards 
+                                of our floral gifts is our top priority. Before any order is 
+                                sent out for delivery, it is throughly checked for quality.</p>
+                            <p>FlowersNFruits India unparalleled quality, overnight, same day, and Sunday 
+                                delivery options combined with our convenient online flower 
+                                shop, makes selecting and sending just the right floral 
+                                expression a breeze.</p>
+
+
+                        </div>
+
+                        <div class="customer_box">
+
+                            <h2>What Our Customers Say About Flowers N Fruits ...</h2>
+
+
+                            <ul>
+                                <li><h3>Very quick..</h3>
+                                    <p>Excellent service! Superb product qualit...</p>
+                                    <h4>Ajeesh Joshy</h4>
+                              </li>
+                              <li>
+                                  
+                                  <h3>Cakes..
+                                      
+                                  </h3>
+                                  <p>Excellent...</p>
+                                  <h4>M Sukumaran</h4>
+                              </li>
+                              <li>
+                                  <h3>Flowers...</h3>
+                                  <p>Beautiful..</p>
+                                  <h4>Dhyan Ajeesh</h4>
+                              </li>
+                            </ul>
+                            <p class="review">Read all Reviews....</p>
+                            <div class="below_area">
+                                
+                                <a href="#"><img src="visa.jpeg" alt="visa"/></a>
+                                <a href="#"><img src="pay.png"></a>
+                                <a href="#"><img src="pencil.jpeg"></a>
+                            </div>
+                        </div>
+        <div class="footer">
+            
+            <ul>
+                <li>
+                    <h2>India</h2>
+                    <p><a href="#">About Us</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Customer review</a></p>
+                </li>
+                <li>
+                    <h2>Privacy & Legal</h2>
+                    <p><a href="#">Terms & Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Delivery & Refund Policy</a></p>
+                </li>
+                <li>
+                    <h2>ordering</h2>
+                    <p><a href="#">My Account</a>
+                    <a href="#">Order Tracking</a>
+                    
+                </li>
+                <li>
+                    <h2>Florist</h2>
+                    <p><a href="#">Login</a>
+                    <a href="#">Sign Up</a>
+                    
+                </li>
+                <li>
+                    <h2>Follows Us</h2>
+                    <p id="face"><i class="fa fa-facebook">Facebook</i>
+                    <p id="face1"><i class="fa fa-google">Google</i>
+                    
+                </li>
+            </ul>
+        </div>
+        <p id="last">Enjoy your world of joy with Flowers and Cakes..!!</p>
                         </body>
                         </html>
