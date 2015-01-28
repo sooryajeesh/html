@@ -1,0 +1,48 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>sum and product</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <style type="text/css">
+        
+        body{
+            background-color: #999999;
+        }
+    </style>
+    <body>
+        <script type="text/javascript">
+            
+            var soorya = function(sum1,sum2,fn)
+            {
+                sum1 = sum1 + 3;
+                sum1 = sum1 + 1;
+                sum1 = sum1 * 8;
+                return fn (sum1,sum2);
+                
+            };
+            
+            function add(sum1,sum2)
+            {
+                return sum1 + sum2;
+                
+            }
+            function product(sum1,sum2)
+            {
+                return sum1 * sum2;
+                
+            }
+            
+            var foo = soorya(2, 2, add);
+            var bar = soorya(3, 2, product);
+            
+            alert(foo);
+            alert(bar);
+            alert("Thank You..");
+        </script>
+    </body>
+</html>
