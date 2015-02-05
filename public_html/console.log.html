@@ -5,10 +5,9 @@ and open the template in the editor.
 <!DOCTYPE html>
 <html>
     <head>
-        <title>soorya ajeesh</title>
+        <title>console.log</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <style type="text/css">
-
             body{
                 background-color: #999999;
             }
@@ -16,20 +15,21 @@ and open the template in the editor.
     </head>
     <body>
         <script type="text/javascript">
-            var person = {
-                firstName: "Soorya",
-                lastName: "Ajeesh",
-                getfullName: function() {
 
-                    return this.firstName + " Dhyan " + this.lastName;
- 
-                }
+            var fruits = ["apple", "grapes", "banana"];
 
-            };
-            
+            alert(fruits.length);
 
-            alert(person.getfullName());
-           
+
+
+
+            var tank = ["soorya", "gaury", "chikku"];
+            while (tank.length > 0)
+            {
+
+                var ball = tank.pop();
+                alert(ball);
+            }
         </script>
     </body>
 </html>

@@ -1,0 +1,64 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>events</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style type ="text/css">
+
+
+            body{
+                background-color: #cccccc;
+            }
+            #demo{
+
+                width: 100px;
+                height: 100px;
+                border: 1px solid transparent;
+                background-color: #99ccff;
+                position: relative;
+                left: 40px;
+                top: 40px;
+                line-height:100px;
+                text-align: center;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <div id ="demo">Be Happy!!</div>
+        <button  id="btn1">click</button>
+        <script type="text/javascript">
+
+            var bloom = document.getElementById("btn1");
+
+            bloom.onclick = function(e) {
+                e.target.innerHTML = "fg erft ";
+
+            };
+
+
+//            bloom.addEventListener("click", function() {
+//                alert("haiijf");
+//            });
+
+
+            var soorya = document.getElementById("demo");
+
+            soorya.onmouseover = function() {
+
+                soorya.style.color = "wheat";
+            };
+
+            var tuttu = document.getElementById("demo");
+
+            tuttu.onblur = function() {
+
+                tuttu.style.backgroundcolor = "wheat";
+            };
+        </script>
+    </body>
+</html>

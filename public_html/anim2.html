@@ -1,0 +1,54 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>hoooooi</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style type="text/css">
+            body{
+                background-color:#999999;
+            }
+       #box{
+
+
+                width: 100px;
+                height: 100px;
+                background-color: #00cccc;
+                position: absolute;
+
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div id="box"></div>
+
+        <script type="text/javascript">
+
+            var speed = 1000,
+                    myBox = function() {
+
+
+                var cute = document.getElementsById('box');
+                   left = cute.offsetLeft,
+                        moveBy = 3;
+
+                cute.style.left = left + moveBy + "2px";
+                if (left > 399)
+                {
+
+                    clearTimeOut(timer);
+                }
+            };
+            var timer = setInterval(myBox, speed);
+            //alert(timer);
+            //alert(spd);
+
+        </script>
+
+    </body>
+</html>

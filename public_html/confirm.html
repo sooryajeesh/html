@@ -1,0 +1,47 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>confirm</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style type="text/css">
+            
+            body{
+                background-color: #999999;
+                    
+            }
+        </style>
+    </head>
+    <body>
+        <div id="cool">Haii haiii haii</div>
+        
+        <script type="text/javascript">
+        var soorya ="gaury";
+        if(confirm("do you want to go google.com?"))
+        {
+        
+        location="https://www.google.com";
+        }
+        else
+        {
+        alert("you stay here");
+        }
+        
+        (function(){
+            
+            var dhyan = document.getElementById("cool");
+            
+            style = dhyan.style;
+            
+            style.color = "blue";
+            style.border = "1px solid red";
+            style.padding = "5px";
+            var color = window.getComputedStyle( dhyan, null).getOwnPropertyValue("color");
+            alert(color);
+        }());
+        </script>
+    </body>
+</html>

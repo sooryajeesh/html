@@ -1,0 +1,44 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>com style1</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style type="text/css">
+            body{
+                background-color: #ccccff;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="foo"</div>
+
+        <script type="text/javascript">
+            var soorya = document.getElementById("foo");
+
+
+                var getstyle = function(soorya, color)
+                {
+                    if (typeof getComputedStyle !== "undefined")
+                    {
+                        return window.getComputedStyle(soorya, null).getPropertyValue("color");
+                    }
+                    else
+                    {
+                         return soorya.currentStyle[color];
+
+                    }
+
+                };
+
+
+                var color = getstyle(soorya, "red");
+
+                alert(color);
+        </script>
+    </body> 
+</html>

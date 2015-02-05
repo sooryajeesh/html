@@ -1,0 +1,44 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>animation java</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style type="text/css">
+            body{
+                background-color:#999999;
+            }
+            
+
+
+        </style>
+    </head>
+    <body>
+        
+        <script type="text/javascript">
+
+            var speed = 2000,
+                    i = 0,
+                    soorya = function() {
+
+                console.log("keep smiling" + (i + 1) + "times");
+                i = i + 1;
+                if (i < 10) {
+
+
+                    setTimeout(soorya, speed);
+                }
+            };
+
+            setTimeout(soorya, speed);
+            alert(speed);
+
+
+
+         
+        </script>    
+    </body>
+</html>

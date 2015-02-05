@@ -1,0 +1,70 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>on and off</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style type ="text/css">
+
+
+            body{
+                background-color: #cccccc;
+            }
+
+            #box1{
+                width:140px;
+                height: 100px;
+                border: 1px solid transparent;
+                background-color:#666666;
+                position: relative;
+                margin-left: 30px;
+                line-height: 100px;
+                text-align: center;
+
+
+            }
+            #btn1, btn2{
+
+                margin-left: 70px;
+                margin-top: 10px;
+
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="box1">Happy</div>
+
+        <button id="btn1">ON</button>
+        <button id="btn2">OFF</button>
+
+
+        <Script type="text/javascript">
+
+            var button1 = document.getElementById("btn1");
+
+
+            button1.onclick = function() {
+
+                box1.style.backgroundColor = "green";
+                btn1.style.backgroundColor ="green";
+
+            };
+            
+            var button2 = document.getElementById("btn2");
+
+
+            button2.onclick = function() {
+
+                box1.style.backgroundColor = "red";
+                btn2.style.backgroundColor ="red";
+            };
+
+
+
+        </script>
+    </body>
+</html>

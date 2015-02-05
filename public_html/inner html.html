@@ -1,0 +1,86 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>inner HTML</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style type="text/css">
+
+            body{
+
+                background-color: #666666;
+
+            }
+
+            #btn1{
+
+                width:100px;
+                height: 30px;
+
+
+                position: absolute;
+                top: 60px;
+                left: 30px;
+                margin-top: 50px;
+            }
+            #btn2{
+
+                width: 100px;
+                height: 30px;
+
+                position: absolute;
+                top: 60px;
+                left:135px;
+                margin-top: 50px;
+            }
+
+            #text1{
+
+                position: relative;
+                top: 5px;
+                left: 40px;
+                height: 40px;
+                width: 160px;
+                border: 1px solid wheat;
+
+
+            }
+        </style>
+    </head>
+    <body>
+        <p id="exm1">always </p>
+
+        <input id="text1" type="text" value="Type here" placeholder="type"/>
+        <input type ="button" id="btn1" onclick="appendtext()" value ="append text"/>
+        <input type ="button" id="btn2" onclick="deletetext()" value ="delete text"/>
+
+        <script type ="text/javascript">
+
+            var exm1 = document.getElementById("exm1");
+
+            exm1.innerHTML = exm1.innerHTML + 'keep smiling';
+
+
+            function appendtext() {
+
+
+                exm1 = document.getElementById("exm1");
+                text1 = document.getElementById("text1");
+
+                exm1.innerHTML = exm1.innerHTML + text1.value;
+
+            };                   
+            function deletetext(){
+                 exm1 = document.getElementById("exm1");
+                 exm1.innerHTML = "";
+               
+            };
+            
+            
+
+        </script>
+    </body>
+</html>
