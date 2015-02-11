@@ -1,0 +1,84 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>creating form</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style type="text/css">
+
+            body{
+
+                background-color: #666666;
+
+
+
+            }
+            #btn1{
+
+                position: relative;
+                top:30px;
+                left: 65px;
+
+
+            }
+            #dropdown1{
+
+                position: absolute;
+                top: 80px;
+                left: 30px;
+                width: 150px;
+                height: 50px;
+
+            }
+            #btn2{
+
+                position: absolute;
+                top:120px;
+                left: 65px;
+
+
+            }
+        </style>
+    </head>
+    <body>
+
+        <button type="button" id ="btn1">Create form</button>
+
+        <select style="display:none" id ="dropdown1">
+
+            <option value ="first name"> First Name</option>
+            <option value ="last name "> last Name</option>
+            <option value ="Place"> Place</option>
+            <option value ="age"> Age</option>
+            <option value ="Email">E Mail</option>
+            <option value ="contact"> Contact</option>
+            <option value ="Qualification"> Qualification</option>
+            <option value ="sex">Sex</option>
+            <option value ="Country"> Country</option>  
+
+
+        </select>
+        <button  style="display: none" type="button" id="btn2">Click Me</button>
+
+        <script type="text/javascript">
+
+            var dropdown1 = document.getElementById("dropdown1");
+            var btn2 = document.getElementById("btn2");
+
+            var aji = document.getElementById("btn1");
+            aji.onclick = function() {
+
+                dropdown1.style.display = "block";
+                btn2.style.display = "block";
+
+
+            };
+
+
+        </script>
+
+    </body>
+</html>
