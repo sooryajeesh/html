@@ -1,0 +1,48 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <div id="mydiv">TODO write content</div>
+        <button id="enable_event">Enable Event</button>
+        <button id="disable_event">Disbale Event</button>
+    </body>
+    <script>
+        var myObject = {
+            name: "Ajeesh",
+            canIWalk: true,
+            canIRun: false,
+            alertMyName: function(){
+                alert("my name is Ajeesh");
+            }
+        };
+        
+        
+        var mydiv_dom = document.getElementById('mydiv');
+        
+        function clickEvent() {
+               alert("You clicked me");
+        }
+        
+        
+        var enable_event_dom = document.getElementById('enable_event');
+        var disable_event_dom = document.getElementById('disable_event');
+                
+        
+        enable_event_dom.onclick = function(){
+            mydiv_dom.addEventListener("click", clickEvent);
+        };                                
+        
+        disable_event_dom.onclick = function(){
+            mydiv_dom.removeEventListener("click", clickEvent);            
+        };
+
+        
+    </script>
+</html>

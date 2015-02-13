@@ -1,0 +1,21 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>num n guess num</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <script type="text/javascript">
+        var num = Math.ceil(Math.random() * 10);
+        var gnum = prompt('Guess the number between 1 and 10 inclusive');
+        if (gnum == num)
+        alert('Matched');
+        else
+        alert('Not matched, the number was ' + num);
+    </script>
+    </body>
+</html>
