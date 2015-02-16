@@ -1,0 +1,72 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Palindrome</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <script type="text/javascript">
+            function palindrome(strng) {
+
+                var palstrng = strng.toLowerCase().replace(/[^a-zA-Z0-9]+/g, "");//change string to lower case n replace alphaneumeric characters
+                var strngcount = 0;
+
+                if (palstrng === "") {          //check string is empty or not
+
+                    alert("string not found");
+                    return false;
+                }
+
+                if ((palstrng.length) % 2 === 0) {     //check string is even or odd
+
+
+                    strngcount = (palstrng.length) / 2;   //even
+                }
+
+                if (palstrng.length === 1) {
+
+                    alert("entry string is Palindrome");   //odd
+                    return true;
+                } else {
+
+                    strngcount = (palstrng.length - 1) / 2;   //if string is odd, then ignore middle character
+                }
+            
+
+
+
+            for (var x = 0; x < strngcount; x++)
+            {
+
+                if (palstrng[x] != palstrng.slice(-1 - x)[0]) 
+            {
+
+                    // compare the characters using loop and drop them if they do not match
+
+                    alert("string is not a palindrome");
+                    return false;
+
+
+                }
+            }  
+            
+
+                alert("The string is a palindrome");
+                return true;
+
+            };
+            
+            
+            palindrome('madam');
+            palindrome('nurses run');
+            palindrome('cat');
+
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,59 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>multiplication n division</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <style type="text/css">
+
+            body{
+
+                background-color: #cccccc;
+            }
+              #result{
+                
+                font-size: 18px;
+                color:#990000;
+                border: 2px solid black;
+                box-shadow:2px 3px 2px #999999;
+                width: auto;
+                height: auto;
+            }
+        </style>
+        <form>
+            1st Number : <input type="text" id="text1" /><br></br>
+            2nd Number: <input type="text" id="text2" /><br></br>
+            <input type="button" onClick="multiplyBy();" Value="Multiply" />
+            <input type="button" onClick="divideBy();" Value="Divide" />
+        </form>
+        <p id="blink">The Result is : <br></br>
+        <span id = "result"></span>
+    </p>
+    <script type="text/javascript">
+            function multiplyBy() {
+
+
+                var num1 = document.getElementById("text1").value;
+                var num2 = document.getElementById("text2").value;
+
+                document.getElementById("result").innerHTML = num1 * num2;
+            }
+            ;
+            function divideBy()  {
+
+
+                var num1 = document.getElementById("text1").value;
+                var num2 = document.getElementById("text2").value;
+
+                document.getElementById("result").innerHTML = num1 / num2;
+            }
+            ;
+
+    </script>
+</body>
+</html>

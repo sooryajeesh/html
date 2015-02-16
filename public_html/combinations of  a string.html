@@ -1,0 +1,28 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>combinations of a string</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <script type="text/javascript">
+            function soorya(str) {
+                var substr = [];
+                for (var x = 0; x < str.length; x++)
+                {
+                    for (var y = x + 1; y <= str.length; y++)
+                    {
+                        substr.push(str.substring(x, y));
+                    }
+                }
+                return substr;
+            }
+            alert(soorya("cat"));
+
+        </script>
+    </body>
+</html>
