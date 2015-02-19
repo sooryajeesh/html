@@ -1,0 +1,39 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> array age sorter</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <p id="disp">Age sorter</p>
+        <script type="text/javascript">
+
+            function Employee(name, age, retiredate) {
+                this.name = name;
+                this.age = age;
+                this.retiredate = retiredate;
+            }
+
+            Employee.prototype.toString = function() {
+                return "Name:" + this.name + " Age:" + this.age + " Retiredate:" + this.retiredate;
+            };
+
+            var employees = [];
+            employees.push(new Employee("George", 32, "March 12, 2014"));
+            employees.push(new Employee("Edward", 17, "June 2, 2023"));
+            employees.push(new Employee("Christine", 58, "December 20, 2036"));
+            employees.push(new Employee("Sarah", 62, "April 30, 2020"));
+
+            employees.sort(function(a, b) {
+                return a.age - b.age;
+            });
+
+            alert(employees.name);
+
+        </script>
+    </body>
+</html>

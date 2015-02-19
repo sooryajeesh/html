@@ -1,0 +1,32 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>array function</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <script type="text/javascript">
+            
+            var fruits = ["apple","orange","banana"];
+            
+            fruits.push( function(){
+                
+                alert(this);
+            });
+            fruits[fruits.length-1]();
+            
+            
+            var flowers =[];
+            flowers[1]= "rose";
+            flowers[99]="jasmin";
+            alert(flowers.length);
+            
+            
+            
+            
+        </script>
+</html>
