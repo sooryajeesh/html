@@ -1,0 +1,27 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>regular expression</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <form NAME="ex1" onSubmit="return false;">
+<input NAME="foo" TYPE="text" SIZE=45 onChange="checkEmail(this.value);">
+</form>
+        <script type="text/javascript">
+
+function checkEmail(myString) 
+{
+   var newString = myString.match(/\b(^(\S+@).+((\.com)|(\.net)|(\.edu)|(\.mil)|(\.gov)|(\.org)|(\..{2,2}))$)\b/gi);
+   if (!newString) alert("Invalid e-mail address!");
+   else {
+      alert(document.ex2.foo.value+" is a valid e-mail address.");
+   }
+};
+</script>
+    </body>
+</html>

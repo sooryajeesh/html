@@ -1,0 +1,37 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>perfect number2</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <script type="text/javascript">
+            
+            function perfect(num){
+                
+                var x=0;
+                for( var i=1; i<=num/2; i++)
+                {
+                    
+                    if(num % i === 0)
+                    {
+                        
+                        x = x + i;
+                    }
+                }
+                if(x === num){
+                    alert("its perfect no");
+                }
+                else{
+                    alert("its not perfect no");
+                }
+            };
+            perfect(496);
+            
+        </script>
+    </body>
+</html>

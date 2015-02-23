@@ -1,0 +1,41 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>count vowels in a string</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <script type="text/javascript">
+
+            function vowels(strng1) {
+
+                var vowelslist = "aeiouAEIOU";
+                var countv = 0;
+
+
+                for(var x = 0; x < strng1.length; x++)
+                {
+
+                   //alert(strng1[x]);
+                   
+                    if (vowelslist.indexOf(strng1[x]) !== -1)
+                    {
+                      countv += 1;
+                    }                    
+                    
+                }
+                return countv;
+
+            }
+            ;
+
+            
+            alert(vowels("Dance in the Rain"));
+
+        </script>
+    </body>
+</html>

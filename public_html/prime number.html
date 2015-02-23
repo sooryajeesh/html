@@ -1,0 +1,44 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>prime number</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <script type="text/javascript">
+            
+            function primeno(n){
+                
+                
+                if(n===1){
+                    
+                    return false;
+                }
+                else if(n===2){
+                    return true;
+                }
+                    else
+                    {
+                        for (x=2; x<n ;x++){
+                            if(n % 2 ===0)
+                            {
+                                return false;
+                            }
+                        }
+                            
+                                return true;
+                            
+                        }
+                            
+                            
+                        
+                    
+            };
+            alert(primeno(50));
+        </script>
+    </body>
+</html>

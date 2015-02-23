@@ -1,0 +1,52 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>typeof data type</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <script type="text/javascript">
+
+            function check_datatypes(value) {
+
+
+                var data_types = [Function, RegExp, Number, String, Boolean, Object], x, y;
+
+                if (typeof value === "object" || typeof value === "function")
+                {
+
+                    for (x = 0, y = data_types.length; x < y; x++)
+
+                    {
+                        if (value instanceof data_types[x])
+
+                        {
+                            return data_types[x];
+                        }
+                    }
+                }
+
+
+                return typeof value;
+            }
+            ;
+            alert(check_datatypes(345));
+            alert(check_datatypes('soorya ajeesh'));
+            alert(check_datatypes(false));
+            alert(check_datatypes(null));
+            alert(check_datatypes ([1, 2, 3, 4, 5]));
+            alert(check_datatypes(undefined));
+            alert(check_datatypes({name:"tuttu", age:23}));
+
+
+
+
+
+
+        </script>
+    </body>
+</html>

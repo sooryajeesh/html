@@ -1,0 +1,42 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>money to coins</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <script type="text/javascript">
+            function money_coin(money,coins){
+            
+                if(money === 0)
+                {
+                    
+                    return[];
+                }
+                else{
+                    
+                  if(money >= coins){
+                      
+                      var x = (money - coins[0]);
+                      return [coins[0]].concat(money_coin(x,coins));
+                  } 
+                  else{
+                      coins.shift();
+                      return money_coin(money,coins);
+                  }
+                    
+                }
+                
+                
+            };
+            alert(money_coin(46, [25, 10, 5, 2,1]));
+            
+            
+            
+        </script>
+    </body>
+</html>

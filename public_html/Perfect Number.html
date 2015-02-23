@@ -1,0 +1,40 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Perfect Number</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <script type="text/javascript">
+            
+            
+            function perfect_no(n){
+                
+               var x=0;
+               
+               for(var i=1; i <= n/2; i++)
+               {
+                   if(n % i === 0)
+                   {
+                       x = x + i;
+                       
+                   }
+                   
+               }
+               if(x === n){
+                   
+                   alert("its a perfect number");
+               }
+               else{
+                   alert( "its not a perfect number");
+               }
+                
+            }
+            perfect_no(496);
+        </script>
+    </body>
+</html>

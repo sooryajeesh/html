@@ -1,0 +1,39 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>count vowels 2</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <script type="text/javascript">
+            function vowels(strng){
+                
+                
+                vowelslist="aeiouAEIOU";
+                count=0;
+               // alert(strng.length);
+               
+               
+                for(var x=0; x<strng.length; x++)
+                {
+                    
+                    if(vowelslist.indexOf(strng[x]) !== -1)
+                    {
+                        
+                        count=count+1;
+                    }
+                    
+                }
+                return count;
+            };
+            alert(vowels("keep smiling always like me!!"));
+            
+        </script>
+    </body>
+</html>
+
+            
