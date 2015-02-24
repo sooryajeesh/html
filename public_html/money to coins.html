@@ -19,7 +19,7 @@ and open the template in the editor.
                 }
                 else{
                     
-                  if(money >= coins){
+                  if(money >= coins[0]){
                       
                       var x = (money - coins[0]);
                       return [coins[0]].concat(money_coin(x,coins));
@@ -33,7 +33,7 @@ and open the template in the editor.
                 
                 
             };
-            alert(money_coin(46, [25, 10, 5, 2,1]));
+            alert(money_coin(100, [25, 10, 5, 2,1]));
             
             
             

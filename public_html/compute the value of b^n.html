@@ -1,0 +1,37 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>compute the value of b^n </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body onload="values(b,n)">
+        
+        <script type="text/javascript">
+            
+            var num1 = (prompt("Enter the Base Number","0"));
+            
+            var num2 = (prompt("Enter the Exponent Number","0"));
+            
+            function values(b,n){
+                
+                var ans = 1;
+                
+                for(var i=1; i<=n; i++)
+                {
+                    
+                     ans = b * ans;
+                }
+                    return ans;
+                    
+                };
+                
+            alert(values(num1,num2));
+            
+            
+        </script>
+    </body>
+</html>
